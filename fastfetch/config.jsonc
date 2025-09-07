@@ -1,0 +1,116 @@
+// Kingdom Hearts :D 
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/ascii2.txt", // make ascii.txt in /fastfetch/
+    "width": 40,
+    "height": 20,
+    "color": {
+      "1": "38;5;124",
+      "2": "38;5;226",
+      "3": "38;5;200",
+      "4": "38;5;220"
+    },
+    "padding": {
+      "top": 0,
+      "left": 2,
+      "right": 2
+  }
+  },
+  
+
+  "display": {
+    "separator": " \u001b[38;5;127m\u001b[0m ",
+    "constants": [
+      "\u001b[38;5;124m─────────────────\u001b[0m" // {$1}, used in Custom module
+    ],
+    "key": {
+      "type": "icon",
+      "paddingLeft": 2
+    }
+  },
+  "modules": [
+    {
+      "type": "custom", // HardwareStart
+      // {#1} is equivalent to `\u001b[1m`. {#} is equivalent to `\u001b[m`
+      "format": "\u001b[38;5;124m┌\u001b[0m{$1} \u001b[38;5;1m$ キングダムインテル $\u001b[0m {$1}\u001b[38;5;124m┐\u001b[0m"
+    },
+    {
+      "type": "host",
+      "keyColor": "#9b111e"
+    },
+    {
+      "type": "cpu",
+      "keyColor": "#a81c07"
+    },
+    {
+      "type": "gpu",
+      "keyColor": "#ae0c00"
+    },
+    {
+      "type": "disk",
+      "keyColor": "#af002a"
+    },
+    {
+      "type": "memory",
+      "keyColor": "#a40000"
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "\u001b[38;5;124m└\u001b[0m{$1}\u001b[38;5;124m──────────────────────\u001b[0m{$1}\u001b[38;5;124m┘\u001b[0m"
+    },
+    {
+      "type": "custom", // Separator
+      "format": ""
+    },
+    {
+      "type": "custom", // SoftwareStart
+      "format": "\u001b[38;5;124m┌\u001b[0m{$1} \u001b[38;5;1m$ サンクチュアリ $\u001b[0m {$1}\u001b[38;5;124m┐\u001b[0m"
+    },
+    {
+      "type": "os",
+      "keyColor": "#9b111e"
+    },
+    {
+      "type": "kernel",
+      "keyColor": "#a81c07"
+    },
+    {
+      "type": "de",
+      "keyColor": "#ae0c00"
+    },
+    {
+      "type": "wm",
+      "keyColor": "#af002a"
+    },
+    {
+      "type": "shell",
+      "keyColor": "#a40000"
+    },
+    {
+      "type": "terminal",
+      "keyColor": "#841b2d"
+    },
+    {
+      "type": "packages",
+      "keyColor": "#801818"
+    },
+    {
+      "type": "uptime",
+      "keyColor": "#7f1734"
+    },
+    {
+      "type": "datetime",
+      "keyColor": "#7f1734"
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "\u001b[38;5;124m└\u001b[0m{$1}\u001b[38;5;124m──────────────────────\u001b[0m{$1}\u001b[38;5;124m┘\u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;5;1m                 ========pgp's PC========"
+    },
+  ]
+}
